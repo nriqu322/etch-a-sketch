@@ -20,6 +20,7 @@ function createGrid() {
         };
     }; 
 };
+
 createGrid();
 
 black.addEventListener('click', () => {
