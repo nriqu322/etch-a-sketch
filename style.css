@@ -1,0 +1,35 @@
+body {
+    justify-content: center;
+    text-align: center;
+}
+
+.projectName {
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 8px;
+}
+
+.gridContainer {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.grid-row {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.grid-cell {
+    border: .1px solid black;
+    width: 100%;
+}
+
+.options {
+    padding: 24px;
+}
