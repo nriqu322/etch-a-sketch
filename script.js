@@ -50,16 +50,13 @@ rainbow.addEventListener('click', () => {
 });
 
 reset.addEventListener('click', () => {
-    gridSize = parseInt(prompt('Grid size?:'));
-    if (isNaN(gridSize)) {   
-        let cells = Array.from(document.querySelectorAll('.grid-cell'));
-        cells.forEarch((cell) => {
-            cell.style.backgroundColor = '';
-        });
-    } else {
-        while (gridContainer.hasChildNodes()) {
-            gridContainer.removeChild(gridContainer.lastChild);
-        }
-        createGrid();
+    gridSize = parseInt(prompt('Grid size?, Between 1 and 50:'));
+    if (gridSize < 1 || gridSize > 50) {   
+        alert('Sorry, max number is 50');
+        gridSize = 50;
     }
+    while (gridContainer.firstChild) {
+        gridContainer.removeChild(gridContainer.firstChild);
+    }
+    createGrid();
 });
