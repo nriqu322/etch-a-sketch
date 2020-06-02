@@ -1,7 +1,9 @@
 # Etch a Sketch
 This is a Javascript project for learning how grid and hover works
 
-![screenshot](/Screenshot.png)
+<img src="images/Screenshot.png" width="782">
+
+![screenshot](/images/etch-a-sketch.png)
 
 # From the Odin Project
 *Link to the [requirements](https://www.theodinproject.com/courses/web-development-101/lessons/etch-a-sketch-project) in the Odin Project*
